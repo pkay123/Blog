@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white-bg: #fff;
+  --dark-bg: #000;
+
+  --font-size-100: 0.9rem;
+  --font-size-200: 1rem;
+  --font-size-300: 2rem;
+
+  --font-color-primary: #000;
+  --font-color-secondary: #fff;
+
+  --font-base: "Open Sans";
+  --font-alt: "Cormorant Upright";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base);
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 70rem;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-size: var(--font-size-300);
+  font-family: var(--font-alt);
+}
+
+.subtitle {
+  font-size: var(--font-size-200);
+}
+
+.desc {
+  font-size: var(--font-size-100);
+}
+
+.btn__dark {
+  background-color: var(--dark-bg);
+  padding: 0.5rem 1.5rem;
+  color: var(--font-color-secondary);
+  cursor: pointer;
+  border: 1px solid var(--dark-bg);
+  border-radius: 5px;
+  font-size: var(--font-size-100);
+  font-family: var(--font-base);
+}
+
+.btn__dark:hover {
+  background-color: transparent;
+  color: var(--font-color-primary);
+}
+
+.btn__light {
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  color: var(--font-color-primary);
+  cursor: pointer;
+  border: 1px solid var(--dark-bg);
+  border-radius: 5px;
+  font-size: var(--font-size-100);
+  font-family: var(--font-base);
+}
+
+.btn__light:hover {
+  background-color: var(--dark-bg);
+  color: var(--font-color-secondary);
+}
+
+@media (max-width: 63em) {
+  .title {
+    font-size: clamp(1.5rem, 1.81vw, 2rem);
+  }
+  .subtitle {
+    font-size: clamp(0.9rem, 1.81vw, 1rem);
+  }
+
+  .desc {
+    font-size: clamp(0.8rem, 1.81vw, 0.9rem);
+  }
+}

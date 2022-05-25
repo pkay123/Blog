@@ -1,0 +1,44 @@
+.app__login {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.app__login .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-bg);
+  border-radius: 20px;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.app__form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0px;
+}
+
+.app__form .title {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+span b {
+  cursor: pointer;
+}

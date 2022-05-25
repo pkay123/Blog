@@ -1,0 +1,42 @@
+.app__destination {
+  width: 100%;
+  height: 100%;
+}
+
+.app__destination .title {
+  text-align: center;
+}
+
+.destination__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.destination__content {
+  position: relative;
+}
+
+.destination__img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.content .subtitle {
+  background-color: var(--font-color-secondary);
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+}

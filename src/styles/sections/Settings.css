@@ -1,0 +1,75 @@
+.app__settings {
+  width: 100%;
+  height: 100vh;
+}
+
+.settings__grid {
+  margin: 7rem 0px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.settings__left ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+.settings__left li {
+  margin: 0;
+}
+
+.settings__left li span {
+  font-weight: bold;
+}
+
+.settings__left li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.settings__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatar__icon {
+  margin-left: 1rem;
+  font-size: 28px;
+}
+
+.profile__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.settings__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings__form .title {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.settings__btns {
+  display: flex;
+  align-items: center;
+}
+
+.settings__btns .btn__dark {
+  margin-left: 1rem;
+}
+
+.settings__btns .btn__light {
+  margin-left: 0;
+}

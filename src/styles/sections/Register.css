@@ -1,0 +1,58 @@
+.app__register {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.app__register .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.register__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-bg);
+  border-radius: 20px;
+  max-width: 50rem;
+  width: 100%;
+  margin: 7rem 0px 3rem 0px;
+}
+
+.app__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.app__form .title {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+input {
+  border: 1px solid var(--dark-bg);
+  margin: 1rem 0px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  font-size: var(--font-size-100);
+  text-align: left;
+}
+
+span b {
+  cursor: pointer;
+}
